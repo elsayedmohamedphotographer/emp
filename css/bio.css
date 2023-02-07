@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--yellow-color);
+}
+
+:root {
+  --yellow-color: #ecca8c;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+  letter-spacing: 2px;
+}
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+body {
+  background-color: black;
+}
+
+.bio-gallery {
+  transition: 0.3s;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.bio-gallery::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  background-color: white;
+}
+
+.bio-gallery img {
+  width: 100%;
+}
+
+.profile-img {
+  position: absolute;
+  right: 100px;
+  bottom: -50px;
+  width: 200px !important;
+  height: 200px;
+  z-index: 9;
+}
+
+.info .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 100px; */
+}
+
+.info .container h1 {
+  color: white;
+  font-size: 25px;
+	white-space: nowrap;
+
+}
+
+.info .container span {
+  color: #878787;
+  font-size: 10px;
+}
+
+.info .container h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--yellow-color);
+  font-size: 25px;
+}
+
+.info .container a {
+  text-decoration: none;
+  color: #878787;
+  display: flex;
+  padding: 15px 30px;
+  border: 1px solid #878787;
+  border-radius: 10px;
+  width: 230px;
+  margin-bottom: 30px;
+  align-items: center;
+	justify-content: space-evenly;
+}
+
+.info .container a i {
+  color: var(--yellow-color);
+  font-size: 30px;
+}
+
+@media (min-width: 991px) {
+	.info .container a {
+		width: 350px;
+	}
+}
+
+@media (max-width: 767px) {
+  .profile-img {
+    width: 100px !important;
+    height: 100px;
+  }
+}
