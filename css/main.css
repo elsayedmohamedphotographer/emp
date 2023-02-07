@@ -128,9 +128,9 @@ h1.pageTitle {
   gap: 30px;
 }
 
-.img-reverse {
+/* .img-reverse {
   flex-direction: row-reverse;
-}
+} */
 
 .gray {
   filter: grayscale(1);
