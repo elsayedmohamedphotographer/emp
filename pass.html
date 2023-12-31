@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normailze.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>EMP studio</title>
+</head>
+
+<body>
+  <form>
+    <input id="text" type="text">
+    <input id="pass" type="passswoard">
+    <input id="btn" type="button" value="Enter">
+  </form>
+  <script>
+    let name = document.querySelector(".id");
+    let pass = document.querySelector(".pass");
+    let button = document.querySelector(".btn");
+
+    button.addEventListener("onclick",()=>{
+      if(name.value == "ahmed" && pass.value == "1234") {
+        console.log("done");
+
+      } else {
+        console.log("bad");
+      }
+    })
+    
+  </script>
+</body>
+</html>
